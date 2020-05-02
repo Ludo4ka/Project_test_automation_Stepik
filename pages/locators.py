@@ -5,3 +5,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+
+class ProductPageLocators():
+    BASKET = (By.CSS_SELECTOR, "#add_to_basket_form")
+    NAME = (By.CSS_SELECTOR, "div.product_main h1") #находим название книги
+    COST = (By.CSS_SELECTOR, "p.price_color") #находим цена книги
+    MESSEGE = (By.CSS_SELECTOR, ".alertinner strong") #сообщение, что товар добавлен в корзину
+    MESSEGE_COST = (By.CSS_SELECTOR, ".alertinner p strong") # сообщ. про стоимость корзины
